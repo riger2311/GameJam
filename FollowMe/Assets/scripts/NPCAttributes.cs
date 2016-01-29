@@ -37,6 +37,7 @@ public class NPCAttributes : MonoBehaviour {
 			actionTriggered = false;
 			//TODO normalize!!!
 			affiliaton = (funValue * funAttribute) + (fearValue * fearAttribute) + (noMeatValue * noMeatAttribute);
+			Debug.Log("Affiliation is: " + affiliaton);
 		} 
 	
 	}
