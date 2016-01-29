@@ -5,6 +5,8 @@ FollowMe/Temp/
 FollowMe/Obj/
 FollowMe/UnityGenerated/
 FollowMe/Library/
+FollowMe/Library/assetsDatabase*
+FollowMe/Library/metadata/*
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
