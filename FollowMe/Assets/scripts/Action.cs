@@ -10,12 +10,12 @@ public class Action{
 	public int actionID;
 	public string actionDesc;
 	public Texture2D actionIcon;
-	public double funStat;
-	public double fearStat;
-	public double noMeatStat;
+	public float funStat;
+	public float fearStat;
+	public float noMeatStat;
 
 
-	public Action(string name, int id, string desc, double fun, double fear, double noMeat)
+	public Action(string name, int id, string desc, float fun, float fear, float noMeat)
 	{
        actionName = name;
        actionID = id;

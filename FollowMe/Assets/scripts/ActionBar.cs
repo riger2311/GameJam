@@ -19,10 +19,6 @@ public class ActionBar : MonoBehaviour {
     {
     	action_bar.Add(database.actions[counter]);
     }
-    for(int inventoryCounter = 0; inventoryCounter < action_bar.Count; inventoryCounter++)
-	{
-	  print("Currently "+action_bar[inventoryCounter].actionName+" in databse");
-	}
 
 
 	}
@@ -31,21 +27,30 @@ public class ActionBar : MonoBehaviour {
 	{
       //set GUI skin and Background of inventory
 	 GUI.skin = skin;
-     GUI.Box(new Rect(0,0,100,100),"",skin.GetStyle("ActionBack"));
-    // GUI.DrawTexture(paper_count_icon_rect,Resources.Load<Texture2D>("inventory icons/paper"));
-    //for(int i = 0; i < inventory.Count; i++)
-    //{
-     // tooltip = "<b>"+inventory[i].itemName +"</b>"+ "\n\n" +inventory[i].itemDesc+"\n\n"/*+ "<b><color=#ffd700>\t\t\t"+inventory[y].itemCost+" Paper"+"</color></b>"*/;
-     // Rect labelRect = GUILayoutUtility.GetRect(new GUIContent(tooltip),skin.GetStyle("Slot"));
-    //  if(labelRect.width > tooltip_rect.width)
-     // {
-     //   tooltip_rect.width = labelRect.width;
-     // }
-    //}
-		//GUI.Box(inventory_background_rect,"",skin.GetStyle("Back"));
-    
-    //GUI.Box(paper_count_rect,"",skin.GetStyle("Back"));
-    //GUI.DrawTexture(paper_count_icon_rect,Resources.Load<Texture2D>("inventory icons/paper"));    
+	 int offset_width = Screen.width/15;
+	 int offset_height = Screen.height/30;
+	 float width = Screen.width - (offset_width*2);
+	 float height = Screen.height/8;
+     
+     float tile_size = (int)height*0.8f;
+     float tile_offset_height = (int)height*0.1f;
+     GUI.Box(new Rect(offset_width,offset_height,width,height),"",skin.GetStyle("ActionBack"));
+     
+
+     float tile_offset_width = (width-(tile_size*action_bar.Count))/(action_bar.Count+1);
+     float begin = offset_width+tile_offset_width;
+
+     for(int counter = 0; counter < action_bar.Count; counter++)
+     {
+     	if(counter != 0)
+     	{
+     		begin += tile_size;
+     		begin += tile_offset_width;
+     	}
+     	GUI.Box(new Rect(begin,offset_height+tile_offset_height,tile_size,tile_size),"",skin.GetStyle("Tile"));
+        GUI.DrawTexture(new Rect(begin,offset_height+tile_offset_height,tile_size,tile_size),Resources.Load<Texture2D>("action icons/fire"));
+     }
+     
 	}
 
 }
