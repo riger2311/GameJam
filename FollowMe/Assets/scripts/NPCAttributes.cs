@@ -36,14 +36,17 @@ public class NPCAttributes : MonoBehaviour {
 		if(actionTriggered) {
 			actionTriggered = false;
 
-			affiliaton = affiliaton + (((funValue * funAttribute) + (fearValue * fearAttribute) + (noMeatValue * noMeatAttribute)) % 1);
+			affiliaton = affiliaton + (((funValue * funAttribute) + 
+				(fearValue * fearAttribute) + 
+				(noMeatValue * noMeatAttribute)) % 1);
+			
 			if(affiliaton > 1.0f) {
 				affiliaton = 1.0f;
 			} else if (affiliaton < -1.0f) {
 				affiliaton = -1.0f;
 			}
 
-			Debug.Log("Affiliation is: " + affiliaton);
+			//Debug.Log("Affiliation is: " + affiliaton);
 		} 
 	
 	}

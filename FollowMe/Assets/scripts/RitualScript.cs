@@ -7,15 +7,18 @@ public class RitualScript : MonoBehaviour {
 	private List<GameObject> npcs;
 	public GameObject npcPrefab;
 
+	public float affiliation;
+
 	// Use this for initialization
 	void Start () {
 		npcs = new List<GameObject>();
 
-		for(int i = 0; i < 3; i++) {
+		for(int i = 0; i < 50; i++) {
 			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(0,0,0), Quaternion.identity));
 		}
 
-		Debug.Log("List contains " + npcs.Count + " elements.");
+		//Debug.Log("List contains " + npcs.Count + " elements.");
+		affiliation = 0.0f;
 	
 	}
 	
@@ -38,6 +41,29 @@ public class RitualScript : MonoBehaviour {
 				npc.GetComponent<NPCAttributes>().triggerAction(-5.0f, 2.0f, 1.0f);
 			}
 		}
+		updateStatusBars();
 	
+	}
+
+	void updateStatusBars() {
+		//TODO change to percentage and influence buttons with them
+		//float sumOfAffiliations = 0.0f;
+		int player1 = 0;
+		int player2 = 0;
+		foreach (GameObject npc in npcs) 
+		{
+			if(npc.GetComponent<NPCAttributes>().affiliatedToPlayer() == 1) {
+				player1++;
+			}
+			else if (npc.GetComponent<NPCAttributes>().affiliatedToPlayer() == 2) {
+				player2++;
+			}
+		}
+		//affiliation = sumOfAffiliations / npcs.Count;
+
+		//Debug.Log("Summed Affiliation is: " + affiliation);
+		Debug.Log("npcs for player1: " + player1);
+		Debug.Log("npcs for player2: " + player2);
+
 	}
 }
