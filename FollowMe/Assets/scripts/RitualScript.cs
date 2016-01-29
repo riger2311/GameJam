@@ -13,9 +13,6 @@ public class RitualScript : MonoBehaviour {
 
 		for(int i = 0; i < 3; i++) {
 			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(0,0,0), Quaternion.identity));
-			//Debug.Log("NPC with attribute: " + npcs[i].GetComponent<NPCAttributes>().funAttribute + " " 
-			//	+ npcs[i].GetComponent<NPCAttributes>().fearAttribute + " " 
-			//	+ npcs[i].GetComponent<NPCAttributes>().noMeatAttribute);
 		}
 
 		Debug.Log("List contains " + npcs.Count + " elements.");
@@ -27,6 +24,20 @@ public class RitualScript : MonoBehaviour {
 			//Debug.Log("NPC with attribute: " + npcs[0].GetComponent<NPCAttributes>().funAttribute + " " 
 			//	+ npcs[0].GetComponent<NPCAttributes>().fearAttribute + " " 
 			//	+ npcs[0].GetComponent<NPCAttributes>().noMeatAttribute);
+
+		if(Input.GetKeyDown(KeyCode.Space)) {
+			foreach (GameObject npc in npcs) 
+			{
+				npc.GetComponent<NPCAttributes>().triggerAction(5.0f, 2.0f, 1.0f);
+			}
+		}
+
+		if(Input.GetKeyDown(KeyCode.B)) {
+			foreach (GameObject npc in npcs) 
+			{
+				npc.GetComponent<NPCAttributes>().triggerAction(-5.0f, 2.0f, 1.0f);
+			}
+		}
 	
 	}
 }
