@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: b092f68e313c4e143b401c0502028db2
+timeCreated: 1454188665
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteAnimation_0
+    21300002: SpriteAnimation_1
+    21300004: SpriteAnimation_2
+    21300006: SpriteAnimation_3
+    21300008: SpriteAnimation_4
+    21300010: SpriteAnimation_5
+    21300012: SpriteAnimation_6
+    21300014: SpriteAnimation_7
+    21300016: SpriteAnimation_8
+    21300018: SpriteAnimation_9
+    21300020: SpriteAnimation_10
+    21300022: SpriteAnimation_11
+    21300024: SpriteAnimation_12
+    21300026: SpriteAnimation_13
+    21300028: SpriteAnimation_14
+    21300030: SpriteAnimation_15
+    21300032: SpriteAnimation_16
+    21300034: SpriteAnimation_17
+    21300036: SpriteAnimation_18
+    21300038: SpriteAnimation_19
+    21300040: SpriteAnimation_20
+    21300042: SpriteAnimation_21
+    21300044: SpriteAnimation_22
+    21300046: SpriteAnimation_23
+    21300048: SpriteAnimation_24
+    21300050: SpriteAnimation_25
+    21300052: SpriteAnimation_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpriteAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141, y: -26}
+        - {x: 101, y: -26}
+        - {x: 70, y: -190}
+        - {x: 70, y: -227}
+        - {x: 83, y: -248}
+        - {x: 101, y: -252}
+        - {x: 149, y: -252}
+        - {x: 183, y: -231}
+        - {x: 183, y: -163}
+        - {x: 178, y: -98}
+      - - {x: 97, y: -97}
+        - {x: 99, y: -99}
+        - {x: 102, y: -98}
+        - {x: 102, y: -94}
+        - {x: 100, y: -92}
+        - {x: 97, y: -93}
+    - name: SpriteAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 149, y: -29}
+        - {x: 112, y: -29}
+        - {x: 71, y: -156}
+        - {x: 71, y: -236}
+        - {x: 75, y: -241}
+        - {x: 86, y: -244}
+        - {x: 109, y: -252}
+        - {x: 161, y: -252}
+        - {x: 184, y: -224}
+        - {x: 184, y: -181}
+        - {x: 161, y: -37}
+    - name: SpriteAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 143, y: -32}
+        - {x: 107, y: -32}
+        - {x: 61, y: -152}
+        - {x: 61, y: -246}
+        - {x: 65, y: -252}
+        - {x: 158, y: -252}
+        - {x: 174, y: -237}
+        - {x: 174, y: -145}
+        - {x: 162, y: -48}
+    - name: SpriteAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 149, y: -32}
+        - {x: 111, y: -32}
+        - {x: 71, y: -147}
+        - {x: 71, y: -244}
+        - {x: 82, y: -255}
+        - {x: 165, y: -255}
+        - {x: 184, y: -229}
+        - {x: 184, y: -184}
+        - {x: 161, y: -40}
+    - name: SpriteAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113, y: -26}
+        - {x: 80, y: -66}
+        - {x: 73, y: -154}
+        - {x: 73, y: -226}
+        - {x: 86, y: -246}
+        - {x: 110, y: -252}
+        - {x: 156, y: -252}
+        - {x: 185, y: -237}
+        - {x: 185, y: -147}
+        - {x: 156, y: -26}
+      - - {x: 99, y: -97}
+        - {x: 100, y: -99}
+        - {x: 103, y: -99}
+        - {x: 105, y: -98}
+        - {x: 105, y: -94}
+        - {x: 104, y: -92}
+        - {x: 102, y: -92}
+        - {x: 99, y: -95}
+    - name: SpriteAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 122, y: -171}
+        - {x: 112, y: -179}
+        - {x: 112, y: -219}
+        - {x: 138, y: -219}
+        - {x: 143, y: -211}
+        - {x: 143, y: -179}
+        - {x: 139, y: -171}
+    - name: SpriteAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 138, y: -133}
+        - {x: 145, y: -133}
+        - {x: 145, y: -126}
+        - {x: 139, y: -126}
+        - {x: 138, y: -128}
+    - name: SpriteAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 139, y: -32}
+        - {x: 119, y: -32}
+        - {x: 108, y: -37}
+        - {x: 72, y: -170}
+        - {x: 72, y: -240}
+        - {x: 88, y: -256}
+        - {x: 184, y: -256}
+        - {x: 184, y: -79}
+        - {x: 146, y: -36}
+      - - {x: 98, y: -103}
+        - {x: 99, y: -105}
+        - {x: 102, y: -105}
+        - {x: 104, y: -104}
+        - {x: 104, y: -100}
+        - {x: 103, y: -98}
+        - {x: 101, y: -98}
+        - {x: 98, y: -101}
+    - name: SpriteAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 110, y: -32}
+        - {x: 107, y: -35}
+        - {x: 71, y: -177}
+        - {x: 71, y: -256}
+        - {x: 184, y: -256}
+        - {x: 184, y: -65}
+        - {x: 154, y: -32}
+      - - {x: 98, y: -103}
+        - {x: 100, y: -105}
+        - {x: 103, y: -104}
+        - {x: 103, y: -100}
+        - {x: 101, y: -98}
+        - {x: 98, y: -99}
+    - name: SpriteAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111, y: -32}
+        - {x: 108, y: -35}
+        - {x: 72, y: -177}
+        - {x: 72, y: -256}
+        - {x: 185, y: -256}
+        - {x: 185, y: -65}
+        - {x: 155, y: -32}
+      - - {x: 99, y: -103}
+        - {x: 101, y: -105}
+        - {x: 104, y: -104}
+        - {x: 104, y: -100}
+        - {x: 102, y: -98}
+        - {x: 99, y: -99}
+    - name: SpriteAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 110, y: -32}
+        - {x: 107, y: -35}
+        - {x: 71, y: -177}
+        - {x: 71, y: -256}
+        - {x: 184, y: -256}
+        - {x: 184, y: -65}
+        - {x: 154, y: -32}
+      - - {x: 98, y: -103}
+        - {x: 100, y: -105}
+        - {x: 103, y: -104}
+        - {x: 103, y: -100}
+        - {x: 101, y: -98}
+        - {x: 98, y: -99}
+    - name: SpriteAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 145, y: -32}
+        - {x: 104, y: -32}
+        - {x: 71, y: -156}
+        - {x: 71, y: -256}
+        - {x: 168, y: -256}
+        - {x: 184, y: -248}
+        - {x: 184, y: -184}
+        - {x: 151, y: -36}
+      - - {x: 98, y: -103}
+        - {x: 100, y: -105}
+        - {x: 103, y: -104}
+        - {x: 103, y: -100}
+        - {x: 101, y: -98}
+        - {x: 98, y: -99}
+    - name: SpriteAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 150, y: -24}
+        - {x: 118, y: -24}
+        - {x: 92, y: -35}
+        - {x: 73, y: -145}
+        - {x: 73, y: -225}
+        - {x: 108, y: -249}
+        - {x: 156, y: -249}
+        - {x: 171, y: -247}
+        - {x: 184, y: -228}
+        - {x: 184, y: -169}
+        - {x: 172, y: -95}
+    - name: SpriteAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113, y: -23}
+        - {x: 97, y: -49}
+        - {x: 72, y: -176}
+        - {x: 72, y: -239}
+        - {x: 98, y: -251}
+        - {x: 184, y: -251}
+        - {x: 184, y: -164}
+        - {x: 175, y: -56}
+        - {x: 140, y: -23}
+    - name: SpriteAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90, y: -25}
+        - {x: 72, y: -31}
+        - {x: 72, y: -248}
+        - {x: 184, y: -248}
+        - {x: 184, y: -60}
+        - {x: 140, y: -25}
+    - name: SpriteAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113, y: -23}
+        - {x: 97, y: -49}
+        - {x: 72, y: -176}
+        - {x: 72, y: -239}
+        - {x: 98, y: -251}
+        - {x: 184, y: -251}
+        - {x: 184, y: -164}
+        - {x: 175, y: -56}
+        - {x: 140, y: -23}
+    - name: SpriteAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 173, y: -61}
+        - {x: 141, y: -24}
+        - {x: 111, y: -24}
+        - {x: 97, y: -49}
+        - {x: 97, y: -106}
+        - {x: 73, y: -197}
+        - {x: 73, y: -234}
+        - {x: 82, y: -249}
+        - {x: 174, y: -249}
+        - {x: 183, y: -218}
+        - {x: 184, y: -215}
+        - {x: 184, y: -192}
+    - name: SpriteAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100, y: -33}
+        - {x: 86, y: -58}
+        - {x: 62, y: -215}
+        - {x: 62, y: -241}
+        - {x: 88, y: -256}
+        - {x: 173, y: -256}
+        - {x: 173, y: -54}
+        - {x: 142, y: -33}
+    - name: SpriteAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: -33}
+        - {x: 80, y: -37}
+        - {x: 62, y: -136}
+        - {x: 62, y: -254}
+        - {x: 70, y: -256}
+        - {x: 173, y: -256}
+        - {x: 173, y: -53}
+        - {x: 142, y: -33}
+    - name: SpriteAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 130, y: -33}
+        - {x: 92, y: -33}
+        - {x: 61, y: -100}
+        - {x: 61, y: -236}
+        - {x: 90, y: -254}
+        - {x: 94, y: -256}
+        - {x: 161, y: -256}
+        - {x: 172, y: -238}
+        - {x: 172, y: -179}
+        - {x: 155, y: -76}
+    - name: SpriteAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 130, y: -33}
+        - {x: 74, y: -33}
+        - {x: 62, y: -90}
+        - {x: 62, y: -240}
+        - {x: 89, y: -256}
+        - {x: 142, y: -256}
+        - {x: 163, y: -251}
+        - {x: 173, y: -228}
+        - {x: 173, y: -197}
+        - {x: 148, y: -74}
+    - name: SpriteAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 133, y: -33}
+        - {x: 111, y: -33}
+        - {x: 68, y: -41}
+        - {x: 62, y: -79}
+        - {x: 62, y: -239}
+        - {x: 89, y: -256}
+        - {x: 142, y: -256}
+        - {x: 163, y: -251}
+        - {x: 173, y: -228}
+        - {x: 173, y: -197}
+        - {x: 148, y: -74}
+    - name: SpriteAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteAnimation_24
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteAnimation_25
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteAnimation_26
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

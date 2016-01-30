@@ -12,6 +12,10 @@ public class RitualScript : MonoBehaviour {
 	public ActionBar gui;
 	public GameObject playerIndicator;
 	public GameObject roundIndicator;
+	public GameObject playerA;
+	public GameObject playerB;
+	public Animator playerAAnimator;
+	public Animator playerBAnimator;
 
 	public float avgAffiliaton;
 	public float minAffiliaton;
@@ -65,6 +69,8 @@ public class RitualScript : MonoBehaviour {
 
 		roundsPlayed = 0;
 	
+		playerAAnimator = playerA.GetComponent<Animator> ();
+		playerBAnimator = playerB.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -170,6 +176,14 @@ public class RitualScript : MonoBehaviour {
 		}
 	}
 
+	void playAnimation(){
+		if (playerModifier < 0) {
+			playerAAnimator.Play ("action", -1, 0.0f);
+		} else {
+			playerBAnimator.Play ("action", -1, 0.0f);
+		}
+	}
+
 	//----- Rituals ----- fun-fear-noMeat
 	public void letBeerRain() {
 		//fun++
@@ -181,9 +195,11 @@ public class RitualScript : MonoBehaviour {
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
 		}
-		playerModifier *= -1.0f;
+
 		repeatedRitual(ref repeatModifier1);
 		roundsPlayed++;
+		playAnimation ();
+		playerModifier *= -1.0f;
 	}
 		
 	public void slaughterLamb() {
@@ -196,9 +212,11 @@ public class RitualScript : MonoBehaviour {
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
 		}
-		playerModifier *= -1.0f;
+
 		repeatedRitual(ref repeatModifier2);
 		roundsPlayed++;
+		playAnimation ();
+		playerModifier *= -1.0f;
 	}
 
 	public void drought() {
@@ -211,9 +229,11 @@ public class RitualScript : MonoBehaviour {
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
 		}
-		playerModifier *= -1.0f;
+
 		repeatedRitual(ref repeatModifier3);
 		roundsPlayed++;
+		playAnimation ();
+		playerModifier *= -1.0f;
 	}
 
 	public void sacrificePeople() {
@@ -226,9 +246,11 @@ public class RitualScript : MonoBehaviour {
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
 		}
-		playerModifier *= -1.0f;
+
 		repeatedRitual(ref repeatModifier4);
 		roundsPlayed++;
+		playAnimation ();
+		playerModifier *= -1.0f;
 	}
 
 	public void praiseTheSun() {
@@ -241,9 +263,11 @@ public class RitualScript : MonoBehaviour {
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
 		}
-		playerModifier *= -1.0f;
+
 		repeatedRitual(ref repeatModifier5);
 		roundsPlayed++;
+		playAnimation ();
+		playerModifier *= -1.0f;
 	}
 
 	public void richHarvest() {
@@ -256,8 +280,10 @@ public class RitualScript : MonoBehaviour {
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
 		}
-		playerModifier *= -1.0f;
+
 		repeatedRitual(ref repeatModifier6);
 		roundsPlayed++;
+		playAnimation ();
+		playerModifier *= -1.0f;
 	}
 }
