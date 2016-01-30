@@ -13,9 +13,9 @@ public class RitualScript : MonoBehaviour {
 	public GameObject playerIndicator;
 	public GameObject roundIndicator;
 
-	public static float avgAffiliaton;
-	public static float minAffiliaton;
-	public static float maxAffiliaton;
+	public float avgAffiliaton;
+	public float minAffiliaton;
+	public float maxAffiliaton;
 
 	private float playerModifier;
 
@@ -54,7 +54,7 @@ public class RitualScript : MonoBehaviour {
 
 //		affiliationPlayer1 = 0.0f;
 //		affiliationPlayer2 = 0.0f;
-		playerModifier = 1.0f; //MUST be 1 or -1
+		playerModifier = -1.0f; //MUST be 1 or -1
 
 		repeatModifier1 = 1.0f;
 		repeatModifier2 = 1.0f;
@@ -73,7 +73,6 @@ public class RitualScript : MonoBehaviour {
 
 		if (roundsPlayed == (maxRounds * 2)) {
 			string winText;
-			// TODO new algo works without affiliationPlayer1 and affiliationPlayer2
 			if (avgAffiliaton < 0f) {
 				winText = "Player 1 wins!";				
 			} else if (avgAffiliaton > 0f) {
@@ -88,7 +87,7 @@ public class RitualScript : MonoBehaviour {
 			roundIndicator.GetComponent<Text> ().text = "";
 
 		} else {
-			string playerText = playerModifier < 0 ? "Player 2" : "Player 1";
+			string playerText = playerModifier < 0 ? "Player 1" : "Player 2";
 			playerIndicator.GetComponent<Text> ().text = playerText;
 
 			string roundText = "Round " + (roundsPlayed / 2 + 1);
@@ -117,7 +116,9 @@ public class RitualScript : MonoBehaviour {
 		//bars.givePointsToB(affiliationPlayer2);
 
 		averageNPCAffiliation ();
-		float mapped = ConvertRange (minAffiliaton, maxAffiliaton, 0f, 1f, avgAffiliaton);
+		Debug.Log (avgAffiliaton);
+		float mapped = ConvertRange (-4f, 4f, 0f, 1f, avgAffiliaton);
+		Debug.Log (mapped);
 		bars.setTo (mapped);
 //		Debug.Log("percentage for player1: " + affiliationPlayer1);
 //		Debug.Log("percentage for player2: " + affiliationPlayer2);
@@ -235,8 +236,8 @@ public class RitualScript : MonoBehaviour {
 	public void praiseTheSun() {
 		//fun++
 		//fear-
-		float funValue = playerModifier * repeatModifier5 * 1.8f; // between -2,-1 and 1,2
-		float fearValue = playerModifier * repeatModifier5 * -1.1f; // between -2,-1 and 1,2
+		float funValue = playerModifier * repeatModifier5 * 1.9f; // between -2,-1 and 1,2
+		float fearValue = playerModifier * repeatModifier5 * -1.2f; // between -2,-1 and 1,2
 		float noMeatValue = playerModifier * 0f;
 		foreach (GameObject npc in npcs) 
 		{		
@@ -251,8 +252,8 @@ public class RitualScript : MonoBehaviour {
 		//noMeat++
 		//fear-
 		float funValue = playerModifier * 0f;
-		float fearValue = playerModifier * repeatModifier6 * 0f; // between -2,-1 and 1,2
-		float noMeatValue = playerModifier * repeatModifier6 * 2f; // between -2,-1 and 1,2
+		float fearValue = playerModifier * repeatModifier6 * -1.3f; // between -2,-1 and 1,2
+		float noMeatValue = playerModifier * repeatModifier6 * 1.8f; // between -2,-1 and 1,2
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);

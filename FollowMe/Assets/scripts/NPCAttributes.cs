@@ -22,6 +22,7 @@ public class NPCAttributes : MonoBehaviour {
 		affiliaton = 0.0f;
 		actionTriggered = false;
 
+		Random.seed = Random.Range (0, 10000);
 		funAttribute = Random.Range(0.0f, 1.0f);
 		fearAttribute = Random.Range(0.0f, 1.0f);
 		noMeatAttribute = Random.Range(0.0f, 1.0f);
@@ -32,11 +33,16 @@ public class NPCAttributes : MonoBehaviour {
 		if(actionTriggered) {
 			actionTriggered = false;
 
-			affiliaton = affiliaton + 
-				(funValue * funAttribute) + 
-				(fearValue * fearAttribute) + 
-				(noMeatValue * noMeatAttribute);
-			float tmpAff = RitualScript.ConvertRange (RitualScript.minAffiliaton, RitualScript.maxAffiliaton, -6.5f, 5.4f, affiliaton);
+			affiliaton = affiliaton +
+			(funValue * funAttribute) +
+			(fearValue * fearAttribute) +
+			(noMeatValue * noMeatAttribute);
+			if (affiliaton < -4f) {
+				affiliaton = -4f;
+			} else if (affiliaton > 4f) {
+				affiliaton = 4f;
+			}
+			float tmpAff = RitualScript.ConvertRange (-4f, 4f, -6.5f, 5.4f, affiliaton);
 			Vector3 v = new Vector3(tmpAff, this.transform.position.y, this.transform.position.z);
 			this.transform.position = v;
 
