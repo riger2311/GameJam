@@ -70,7 +70,7 @@ public class ActionBar : MonoBehaviour {
        {
 
 
-            tooltip = "<b>"+action_bar[counter].actionName.ToUpper() +"</b>"+ "\n\n" +action_bar[counter].actionDesc+"\n\n";
+            tooltip = ""+action_bar[counter].actionName.ToUpper() +""+ "\n\n" +action_bar[counter].actionDesc+"\n\n";
             Rect labelRect = GUILayoutUtility.GetRect(new GUIContent(tooltip),skin.GetStyle("ActionBack"));
             Rect tooltip_rect = new Rect(begin,(offset_height+height+tile_offset_height),30,30);
             if(tooltip_rect.width < labelRect.width)
