@@ -7,14 +7,17 @@ public class ActionBar : MonoBehaviour {
     public GUISkin skin;
     public RitualScript ritualScript;
     private ActionDatabase database;
-    string tooltip;
+    private string tooltip;
+
+    private bool showActionBar;
+    private string winText;
 
     
 
 	// Use this for initialization
 	void Start ()
 	{
-	  
+	showActionBar = true;
 	database = GetComponent<ActionDatabase>();
 	
     for(int counter = 0; counter < database.actions.Count; counter++)
@@ -29,10 +32,19 @@ public class ActionBar : MonoBehaviour {
 	{
       //set GUI skin and Background of inventory
 	 GUI.skin = skin;
-	 int offset_width = Screen.width/15;
-	 int offset_height = Screen.height/30;
-	 float width = Screen.width - (offset_width*2);
-	 float height = Screen.height/8;
+   if(showActionBar) {
+    drawActionBar();
+   }
+   else {
+    showWinningPlayer();
+   } 
+	}
+
+  void drawActionBar(){
+    int offset_width = Screen.width/15;
+   int offset_height = Screen.height/30;
+   float width = Screen.width - (offset_width*2);
+   float height = Screen.height/8;
      
      float tile_size = (int)height*0.8f;
      float tile_offset_height = (int)height*0.1f;
@@ -44,13 +56,13 @@ public class ActionBar : MonoBehaviour {
 
      for(int counter = 0; counter < action_bar.Count; counter++)
      {
-     	if(counter != 0)
-     	{
-     		begin += tile_size;
-     		begin += tile_offset_width;
-     	}
+      if(counter != 0)
+      {
+        begin += tile_size;
+        begin += tile_offset_width;
+      }
         Rect action_Rect = new Rect(begin,offset_height+tile_offset_height,tile_size,tile_size);
-     	GUI.Box(action_Rect,"",skin.GetStyle("Tile"));
+      GUI.Box(action_Rect,"",skin.GetStyle("Tile"));
         GUI.DrawTexture(action_Rect,action_bar[counter].actionIcon);
       
       //check if mouse is hovering over action
@@ -88,7 +100,23 @@ public class ActionBar : MonoBehaviour {
           }
        }
      }
-    } 
-	}
+    }
+  }
+
+  void showWinningPlayer() {
+            GUI.skin.label.alignment = TextAnchor.MiddleCenter;
+            int startX = Screen.width / 4;
+            int startY = Screen.height / 4;
+            int width = 2 * startX;
+            int height = startY;
+
+            GUI.Box(new Rect(startX, startY, width, height),"",skin.GetStyle("ActionBack"));
+            GUI.Label(new Rect(startX, startY, width, height), "<b><color=#000000><size=70>" + winText + "</size></color></b>");
+  }
+
+  public void showWinText(string wintext) {
+    winText = wintext;
+    showActionBar = false;
+  }
 
 }
