@@ -920,6 +920,7 @@ MonoBehaviour:
   npcPrefab: {fileID: 163582, guid: e44c70e9eac344bd09e19677536cc885, type: 2}
   bars: {fileID: 191876622}
   maxRounds: 5
+  gui: {fileID: 649304340}
 --- !u!4 &1381165187
 Transform:
   m_ObjectHideFlags: 0
