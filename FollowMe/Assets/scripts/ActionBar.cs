@@ -58,7 +58,7 @@ public class ActionBar : MonoBehaviour {
        {
 
 
-            tooltip = "<b>"+action_bar[counter].actionName +"</b>"+ "\n\n" +action_bar[counter].actionDesc+"\n\n";
+            tooltip = "<color=#000000><b>"+action_bar[counter].actionName.ToUpper() +"</b>"+ "\n\n" +action_bar[counter].actionDesc+"\n\n</color>";
             Rect labelRect = GUILayoutUtility.GetRect(new GUIContent(tooltip),skin.GetStyle("ActionBack"));
             Rect tooltip_rect = new Rect(begin,(offset_height+height+tile_offset_height),30,30);
             if(tooltip_rect.width < labelRect.width)
@@ -67,10 +67,12 @@ public class ActionBar : MonoBehaviour {
             }
             if(tooltip_rect.height < labelRect.height)
             {
-                tooltip_rect.height = labelRect.height;//+(2*(tile_offset_height));
+                tooltip_rect.height = labelRect.height;
             }
-            GUI.Box(tooltip_rect,tooltip,skin.GetStyle("ActionBack"));
-            //TODO make text fancier
+            GUI.skin.label.alignment = TextAnchor.UpperLeft;
+            Rect text_rect = new Rect(tooltip_rect.x+tile_offset_height, tooltip_rect.y+tile_offset_height,tooltip_rect.width,tooltip_rect.height);
+            GUI.Box(tooltip_rect,"",skin.GetStyle("ActionBack"));
+            GUI.Label(text_rect,tooltip);
 
         //check if action is clicked on
         if(Event.current.isMouse && Event.current.type == EventType.mouseDown && Event.current.button == 0)
