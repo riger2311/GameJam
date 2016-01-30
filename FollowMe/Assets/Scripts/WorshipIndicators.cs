@@ -16,14 +16,14 @@ public class WorshipIndicators : MonoBehaviour {
 	}
 
 	public void givePointsToA(float percent){
-		if ( percent < 0 || percent > 1) {
+		if ( percent < 0.0f || percent > 1.0f) {
 			return;
 		}
 
-		if (SliderA.value + percent > 1) {
-			SliderA.value = 1;
-			SliderB.value = 0;
-			Debug.Log ("You Won!!!");
+		if (SliderA.value + percent > 1.0f) {
+			SliderA.value = 1.0f;
+			SliderB.value = 0.0f;
+			//Debug.Log ("You Won!!!");
 
 			// TODO trigger win
 		}
@@ -33,14 +33,14 @@ public class WorshipIndicators : MonoBehaviour {
 	}
 
 	public void givePointsToB(float percent){
-		if ( percent < 0 || percent > 1) {
+		if ( percent < 0.0f || percent > 1.0f) {
 			return;
 		}
 
-		if (SliderB.value + percent > 1) {
-			SliderB.value = 1;
-			SliderA.value = 0;
-			Debug.Log ("You Won!!!");
+		if (SliderB.value + percent > 1.0f) {
+			SliderB.value = 1.0f;
+			SliderA.value = 0.0f;
+			//Debug.Log ("You Won!!!");
 
 			// TODO trigger win
 		}
