@@ -70,7 +70,7 @@ public class ActionBar : MonoBehaviour {
        {
 
 
-            tooltip = "<color=#000000><b>"+action_bar[counter].actionName.ToUpper() +"</b>"+ "\n\n" +action_bar[counter].actionDesc+"\n\n</color>";
+            tooltip = "<b>"+action_bar[counter].actionName.ToUpper() +"</b>"+ "\n\n" +action_bar[counter].actionDesc+"\n\n";
             Rect labelRect = GUILayoutUtility.GetRect(new GUIContent(tooltip),skin.GetStyle("ActionBack"));
             Rect tooltip_rect = new Rect(begin,(offset_height+height+tile_offset_height),30,30);
             if(tooltip_rect.width < labelRect.width)
@@ -111,7 +111,7 @@ public class ActionBar : MonoBehaviour {
             int height = startY;
 
             GUI.Box(new Rect(startX, startY, width, height),"",skin.GetStyle("ActionBack"));
-            GUI.Label(new Rect(startX, startY, width, height), "<b><color=#000000><size=70>" + winText + "</size></color></b>");
+            GUI.Label(new Rect(startX, startY, width, height), "<b><size=70>" + winText + "</size></b>");
   }
 
   public void showWinText(string wintext) {

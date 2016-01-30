@@ -238,7 +238,7 @@ MonoBehaviour:
     m_Font: {fileID: 0}
     m_FontSize: 0
     m_FontStyle: 0
-    m_Alignment: 0
+    m_Alignment: 4
     m_WordWrap: 1
     m_RichText: 1
     m_TextClipping: 1
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   - m_Name: ActionBack
     m_Normal:
       m_Background: {fileID: 2800000, guid: 65c0dfb26b6cc48b2879a7e5538d1b78, type: 3}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1254,10 +1254,10 @@ MonoBehaviour:
   - m_Name: Tile
     m_Normal:
       m_Background: {fileID: 2800000, guid: e8d74a7bcedd347319017488f6f670c8, type: 3}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 2800000, guid: 0620ff19ef18547cd95aece9df2586e0, type: 3}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Active:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
