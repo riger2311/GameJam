@@ -992,7 +992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcPrefab: {fileID: 180466, guid: b4e0e9ca721f4406c8850bc7d3757f54, type: 2}
   bars: {fileID: 191876622}
-  maxRounds: 0
+  maxRounds: 5
   gui: {fileID: 649304340}
   playerIndicator: {fileID: 1890527709}
   roundIndicator: {fileID: 588469514}

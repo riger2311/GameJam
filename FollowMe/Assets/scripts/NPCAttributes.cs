@@ -36,6 +36,9 @@ public class NPCAttributes : MonoBehaviour {
 				(funValue * funAttribute) + 
 				(fearValue * fearAttribute) + 
 				(noMeatValue * noMeatAttribute);
+			float tmpAff = RitualScript.ConvertRange (-6.0f, 6.0f, -6.5f, 5.4f, affiliaton);
+			Vector3 v = new Vector3(tmpAff, this.transform.position.y, this.transform.position.z);
+			this.transform.position = v;
 
 		} 
 	

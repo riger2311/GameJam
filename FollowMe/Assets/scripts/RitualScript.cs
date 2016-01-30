@@ -37,27 +37,29 @@ public class RitualScript : MonoBehaviour {
 		npcs = new List<GameObject>();
 		int people = 50;
 		int rows = 3;
-		float x = -7.0f;
-		float y = -1.5f;
+		float x = 0;
+		float y = -3.5f;
 		float offset = -0.2f;
 
 		for(int i = 0; i < people; i++) {
 			//lower x= -7.0
 			//upper x= 4.0
  
-			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(x, y,0.0f), Quaternion.identity));
-			x +=  (11.0f * ((float) rows) / ((float) people));
-			if(x > 4.0f) {
-				//
-				x = -7.0f + offset;
-				y -= 0.3f * ((float) rows);
-				offset += 0.4f;
-			}
+			float tmpx = x + Random.Range(-2f, 2f);
+			float tmpy = y + Random.Range(-0.5f, 0.1f);
+			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(tmpx, tmpy,0.0f), Quaternion.identity));
+//			x +=  (11.0f * ((float) rows) / ((float) people));
+//			if(x > 4.0f) {
+//				//
+//				x = -7.0f + offset;
+//				y -= 0.3f * ((float) rows);
+//				offset += 0.4f;
+//			}
 		}
 
 //		affiliationPlayer1 = 0.0f;
 //		affiliationPlayer2 = 0.0f;
-		playerModifier = -1.0f; //MUST be 1 or -1
+		playerModifier = 1.0f; //MUST be 1 or -1
 
 		repeatModifier1 = 1.0f;
 		repeatModifier2 = 1.0f;
@@ -121,14 +123,13 @@ public class RitualScript : MonoBehaviour {
 
 		averageNPCAffiliation ();
 		float mapped = ConvertRange (minAffiliaton, maxAffiliaton, 0f, 1f, avgAffiliaton);
-		Debug.Log (minAffiliaton + " " + maxAffiliaton + " " + avgAffiliaton);
-		Debug.Log (mapped);
-
+		bars.setTo (mapped);
 //		Debug.Log("percentage for player1: " + affiliationPlayer1);
 //		Debug.Log("percentage for player2: " + affiliationPlayer2);
 	}
 
-	public float ConvertRange(
+	/*
+	public static float ConvertRange(
 		float originalStart, float originalEnd,
 		float newStart, float newEnd,
 		float value)
@@ -137,10 +138,16 @@ public class RitualScript : MonoBehaviour {
 		float originalDiff = originalEnd - originalStart;
 		float newDiff = newEnd - newStart;
 		float ratio = newDiff / originalDiff;
-		float newProduct = value * ratio;
+		float newProduct = (value - originalStart) * ratio;
 		float finalValue = newProduct + newStart;
 		return finalValue; 
-
+	}*/
+	public static float ConvertRange(
+		float a, float b,
+		float c, float d,
+		float x)
+	{
+		return (x-a)/(b-a) * (d-c) + c; 
 	}
 
 	void averageNPCAffiliation(){
