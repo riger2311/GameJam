@@ -11,7 +11,7 @@ public class NPCAttributes : MonoBehaviour {
 
 	//should be between -1.0 and 1.0
 	//-1.0 means, the npc belongs to player 1, 1.0 means to the other player
-	private float affiliaton; 
+	public float affiliaton; 
 	private bool actionTriggered;
 	private float funValue;
 	private float fearValue;
@@ -22,9 +22,9 @@ public class NPCAttributes : MonoBehaviour {
 		affiliaton = 0.0f;
 		actionTriggered = false;
 
-		funAttribute = Random.Range(1.0f, 1.25f);
-		fearAttribute = Random.Range(1.0f, 1.25f);
-		noMeatAttribute = Random.Range(1.0f, 1.25f);
+		funAttribute = Random.Range(0.0f, 1.0f);
+		fearAttribute = Random.Range(0.0f, 1.0f);
+		noMeatAttribute = Random.Range(0.0f, 1.0f);
 	}
 	
 	// Update is called once per frame
@@ -32,15 +32,10 @@ public class NPCAttributes : MonoBehaviour {
 		if(actionTriggered) {
 			actionTriggered = false;
 
-			affiliaton = affiliaton + (((funValue * funAttribute) + 
+			affiliaton = affiliaton + 
+				(funValue * funAttribute) + 
 				(fearValue * fearAttribute) + 
-				(noMeatValue * noMeatAttribute)) % 1);
-			
-			if(affiliaton > 1.0f) {
-				affiliaton = 1.0f;
-			} else if (affiliaton < -1.0f) {
-				affiliaton = -1.0f;
-			}
+				(noMeatValue * noMeatAttribute);
 
 		} 
 	
