@@ -50,7 +50,7 @@ public class ActionBar : MonoBehaviour {
      	}
         Rect action_Rect = new Rect(begin,offset_height+tile_offset_height,tile_size,tile_size);
      	GUI.Box(action_Rect,"",skin.GetStyle("Tile"));
-        GUI.DrawTexture(action_Rect,Resources.Load<Texture2D>("action icons/"+action_bar[counter].actionName));
+        GUI.DrawTexture(action_Rect,action_bar[counter].actionIcon);
       
       //check if mouse is hovering over action
        if(action_Rect.Contains(Event.current.mousePosition))

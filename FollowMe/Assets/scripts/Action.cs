@@ -20,7 +20,7 @@ public class Action{
        actionName = name;
        actionID = id;
        actionDesc = desc;
-       actionIcon = Resources.Load<Texture2D>("action icons/" + name);
+       actionIcon = Resources.Load<Texture2D>("action icons/" + name +"-01");
        funStat = fun;
        fearStat = fear;
        noMeatStat = noMeat;
