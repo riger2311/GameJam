@@ -5,6 +5,7 @@ public class ActionBar : MonoBehaviour {
 
     public List<Action> action_bar = new List<Action>();
     public GUISkin skin;
+    public RitualScript ritualScript;
     private ActionDatabase database;
     string tooltip;
 
@@ -76,11 +77,18 @@ public class ActionBar : MonoBehaviour {
         //check if action is clicked on
         if(Event.current.isMouse && Event.current.type == EventType.mouseDown && Event.current.button == 0)
         {
-          print("You clicked"+counter);
-        }
+          switch(counter) {
+          case 0: ritualScript.letBeerRain(); break;
+          case 1: ritualScript.slaughterLamb(); break;
+          case 2: ritualScript.drought(); break;
+          case 3: ritualScript.sacrificePeople(); break;
+          case 4: ritualScript.praiseTheSun(); break;
+          case 5: ritualScript.richHarvest(); break;
+          default: break;
+          }
        }
      }
-     
+    } 
 	}
 
 }
