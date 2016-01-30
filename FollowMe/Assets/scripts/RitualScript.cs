@@ -37,8 +37,8 @@ public class RitualScript : MonoBehaviour {
 	void Start () {
 		npcs = new List<GameObject>();
 		int people = 50;
-		float x = 0;
-		float y = -3.5f;
+		float x = -2.5f;
+		float y = 0.0f;
 
 		for(int i = 0; i < people; i++) {
 			//lower x= -7.0
