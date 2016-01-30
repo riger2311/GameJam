@@ -92,8 +92,8 @@ public class RitualScript : MonoBehaviour {
 		bars.givePointsToA(affiliationPlayer1);
 		bars.givePointsToB(affiliationPlayer2);
 
-		//Debug.Log("percentage for player1: " + affiliationPlayer1);
-		//Debug.Log("percentage for player2: " + affiliationPlayer2);
+		Debug.Log("percentage for player1: " + affiliationPlayer1);
+		Debug.Log("percentage for player2: " + affiliationPlayer2);
 	}
 
 	void repeatedRitual(ref float repeatModifier) {
