@@ -15,6 +15,5 @@ public class ActionDatabase : MonoBehaviour {
 	  actions.Add(new Action("harvest",3,"Be good and don't let them starve ",1.1f,2.1f,3.1f));
 	  actions.Add(new Action("pig",4,"Slaughter a pig",1.1f,2.1f,3.1f));
 	  actions.Add(new Action("sun",5,"Let the sun shine",1.1f,2.1f,3.1f));
-	  actions.Add(new Action("thunder",6,"Cast a mighty thunder",1.1f,2.1f,3.1f));
 	}
 }
