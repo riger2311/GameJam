@@ -8,6 +8,7 @@ public class RitualScript : MonoBehaviour {
 	public GameObject npcPrefab;
 	public WorshipIndicators bars;
 	public int maxRounds;
+	public ActionBar gui;
 
 	private float affiliationPlayer1;
 	private float affiliationPlayer2;
@@ -52,15 +53,16 @@ public class RitualScript : MonoBehaviour {
 		updateStatusBars();
 
 		if(roundsPlayed == (maxRounds * 2)) {
+			string winText;
 			if(affiliationPlayer1 > affiliationPlayer2) {
-				Debug.Log("Player 1 wins!");				
+				winText = "Player 1 wins!";				
 			} else if (affiliationPlayer1 < affiliationPlayer2) {
-				Debug.Log("Player 2 wins!");
+				winText = "Player 2 wins!";
 			} else {
-				Debug.Log("Draw!");
+				winText = "Draw!";
 			}
-			//TODO disable Inventory
-			//TODO display Winning text
+
+			gui.showWinText(winText);
 
 		}
 	
