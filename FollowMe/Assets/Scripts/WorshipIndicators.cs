@@ -47,4 +47,9 @@ public class WorshipIndicators : MonoBehaviour {
 		SliderB.value = percent;
 	}
 
+	public void setTo(float percent){
+		SliderA.value = 1- percent;
+		SliderB.value = percent;
+	}
+
 }
