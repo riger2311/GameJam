@@ -52,7 +52,7 @@ public class RitualScript : MonoBehaviour {
 
 		affiliationPlayer1 = 0.0f;
 		affiliationPlayer2 = 0.0f;
-		playerModifier = 1.0f; //MUST be 1 or -1
+		playerModifier = -1.0f; //MUST be 1 or -1
 
 		repeatModifier1 = 1.0f;
 		repeatModifier2 = 1.0f;
@@ -128,8 +128,8 @@ public class RitualScript : MonoBehaviour {
 	public void letBeerRain() {
 		//fun++
 		//fear--
-		float funValue = playerModifier * repeatModifier1 * 3.0f;
-		float fearValue = playerModifier * repeatModifier1 * -2.0f;
+		float funValue = playerModifier * repeatModifier1 * 1.6f;
+		float fearValue = playerModifier * repeatModifier1 * -1.2f;
 		float noMeatValue = playerModifier * 1.0f;
 		foreach (GameObject npc in npcs) 
 		{		
@@ -144,8 +144,8 @@ public class RitualScript : MonoBehaviour {
 		//noMeat--
 		//fear++
 		float funValue = playerModifier * 1.0f;
-		float fearValue = playerModifier * repeatModifier2 * 3.0f;
-		float noMeatValue = playerModifier * repeatModifier2 * -2.0f;
+		float fearValue = playerModifier * repeatModifier2 * 1.6f;
+		float noMeatValue = playerModifier * repeatModifier2 * -1.2f;
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
@@ -159,8 +159,8 @@ public class RitualScript : MonoBehaviour {
 		//fear++
 		//noMeat-
 		float funValue = playerModifier * 1.0f;
-		float fearValue = playerModifier * repeatModifier3 *2.5f;
-		float noMeatValue = playerModifier * repeatModifier3 * -1.5f;
+		float fearValue = playerModifier * repeatModifier3 *1.6f;
+		float noMeatValue = playerModifier * repeatModifier3 * -1.2f;
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
@@ -173,8 +173,8 @@ public class RitualScript : MonoBehaviour {
 	public void sacrificePeople() {
 		//fear++
 		//fun-
-		float funValue = playerModifier * repeatModifier4 * -2.0f;
-		float fearValue = playerModifier * repeatModifier4 * 3.0f;
+		float funValue = playerModifier * repeatModifier4 * -1.2f;
+		float fearValue = playerModifier * repeatModifier4 * 1.6f;
 		float noMeatValue = playerModifier * 1.0f;
 		foreach (GameObject npc in npcs) 
 		{		
@@ -188,8 +188,8 @@ public class RitualScript : MonoBehaviour {
 	public void praiseTheSun() {
 		//fun++
 		//fear-
-		float funValue = playerModifier * repeatModifier5 * 2.5f;
-		float fearValue = playerModifier * repeatModifier5 * -1.5f;
+		float funValue = playerModifier * repeatModifier5 * 1.4f;
+		float fearValue = playerModifier * repeatModifier5 * -1.3f;
 		float noMeatValue = playerModifier * 1.0f;
 		foreach (GameObject npc in npcs) 
 		{		
@@ -204,8 +204,8 @@ public class RitualScript : MonoBehaviour {
 		//noMeat++
 		//fear-
 		float funValue = playerModifier * 1.0f;
-		float fearValue = playerModifier * repeatModifier6 * -2.0f;
-		float noMeatValue = playerModifier * repeatModifier6 * 3.0f;
+		float fearValue = playerModifier * repeatModifier6 * -1.3f;
+		float noMeatValue = playerModifier * repeatModifier6 * 1.6f;
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
