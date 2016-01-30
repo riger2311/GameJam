@@ -28,8 +28,7 @@ public class WorshipIndicators : MonoBehaviour {
 			// TODO trigger win
 		}
 
-		SliderA.value += percent;
-		SliderB.value -= percent;
+		SliderA.value = percent;
 	}
 
 	public void givePointsToB(float percent){
@@ -45,8 +44,7 @@ public class WorshipIndicators : MonoBehaviour {
 			// TODO trigger win
 		}
 
-		SliderB.value += percent;
-		SliderA.value -= percent;
+		SliderB.value = percent;
 	}
 
 }
