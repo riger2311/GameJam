@@ -44,6 +44,7 @@ public class RitualScript : MonoBehaviour {
 			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(x, y,0.0f), Quaternion.identity));
 			x +=  (11.0f * ((float) rows) / ((float) people));
 			if(x > 4.0f) {
+				//
 				x = -7.0f + offset;
 				y -= 0.3f * ((float) rows);
 				offset += 0.4f;
