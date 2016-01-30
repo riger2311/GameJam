@@ -15,12 +15,12 @@ public class Action{
 	public float noMeatStat;
 
 
-	public Action(string name, int id, string desc, float fun, float fear, float noMeat)
+	public Action(string name, int id, string desc, Texture2D icon, float fun, float fear, float noMeat)
 	{
        actionName = name;
        actionID = id;
        actionDesc = desc;
-       actionIcon = Resources.Load<Texture2D>("action icons/" + name);
+       actionIcon = icon;
        funStat = fun;
        fearStat = fear;
        noMeatStat = noMeat;
