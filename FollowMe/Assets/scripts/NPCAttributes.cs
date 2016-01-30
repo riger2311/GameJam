@@ -25,10 +25,6 @@ public class NPCAttributes : MonoBehaviour {
 		funAttribute = Random.Range(1.0f, 1.25f);
 		fearAttribute = Random.Range(1.0f, 1.25f);
 		noMeatAttribute = Random.Range(1.0f, 1.25f);
-
-		//Debug.Log("funAttribute: " + funAttribute);
-		//Debug.Log("fearAttribute: " + fearAttribute);
-		//Debug.Log("noMeatAttribute: " + noMeatAttribute);
 	}
 	
 	// Update is called once per frame
@@ -46,7 +42,6 @@ public class NPCAttributes : MonoBehaviour {
 				affiliaton = -1.0f;
 			}
 
-			//Debug.Log("Affiliation is: " + affiliaton);
 		} 
 	
 	}

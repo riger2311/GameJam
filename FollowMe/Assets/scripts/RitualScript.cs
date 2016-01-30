@@ -6,27 +6,26 @@ public class RitualScript : MonoBehaviour {
 
 	private List<GameObject> npcs;
 	public GameObject npcPrefab;
+	public WorshipIndicators bars;
 
-	public float affiliation;
+	private float affiliationPlayer1;
+	private float affiliationPlayer2;
 
 	// Use this for initialization
 	void Start () {
 		npcs = new List<GameObject>();
 
-		for(int i = 0; i < 50; i++) {
+		for(int i = 0; i < 100; i++) {
 			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(0,0,0), Quaternion.identity));
 		}
 
-		//Debug.Log("List contains " + npcs.Count + " elements.");
-		affiliation = 0.0f;
+		affiliationPlayer1 = 0.0f;
+		affiliationPlayer2 = 0.0f;
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-			//Debug.Log("NPC with attribute: " + npcs[0].GetComponent<NPCAttributes>().funAttribute + " " 
-			//	+ npcs[0].GetComponent<NPCAttributes>().fearAttribute + " " 
-			//	+ npcs[0].GetComponent<NPCAttributes>().noMeatAttribute);
 
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			foreach (GameObject npc in npcs) 
@@ -46,8 +45,6 @@ public class RitualScript : MonoBehaviour {
 	}
 
 	void updateStatusBars() {
-		//TODO change to percentage and influence buttons with them
-		//float sumOfAffiliations = 0.0f;
 		int player1 = 0;
 		int player2 = 0;
 		foreach (GameObject npc in npcs) 
@@ -59,11 +56,15 @@ public class RitualScript : MonoBehaviour {
 				player2++;
 			}
 		}
-		//affiliation = sumOfAffiliations / npcs.Count;
 
-		//Debug.Log("Summed Affiliation is: " + affiliation);
-		Debug.Log("npcs for player1: " + player1);
-		Debug.Log("npcs for player2: " + player2);
+		affiliationPlayer1 = (float)player1 / (float)npcs.Count;
+		affiliationPlayer2 = (float)player2 / (float)npcs.Count;
+
+		bars.givePointsToA(affiliationPlayer1);
+		bars.givePointsToB(affiliationPlayer2);
+
+		//Debug.Log("percentage for player1: " + affiliationPlayer1);
+		//Debug.Log("percentage for player2: " + affiliationPlayer2);
 
 	}
 }
