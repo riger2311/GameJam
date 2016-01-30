@@ -116,9 +116,7 @@ public class RitualScript : MonoBehaviour {
 		//bars.givePointsToB(affiliationPlayer2);
 
 		averageNPCAffiliation ();
-		Debug.Log (avgAffiliaton);
 		float mapped = ConvertRange (-4f, 4f, 0f, 1f, avgAffiliaton);
-		Debug.Log (mapped);
 		bars.setTo (mapped);
 //		Debug.Log("percentage for player1: " + affiliationPlayer1);
 //		Debug.Log("percentage for player2: " + affiliationPlayer2);
