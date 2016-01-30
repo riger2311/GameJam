@@ -77,11 +77,11 @@ public class ActionBar : MonoBehaviour {
         {
           switch(counter) {
           case 0: ritualScript.letBeerRain(); break;
-          case 1: ritualScript.slaughterLamb(); break;
+          case 1: ritualScript.sacrificePeople(); break;
           case 2: ritualScript.drought(); break;
-          case 3: ritualScript.sacrificePeople(); break;
-          case 4: ritualScript.praiseTheSun(); break;
-          case 5: ritualScript.richHarvest(); break;
+          case 3: ritualScript.richHarvest(); break;
+          case 4: ritualScript.slaughterLamb(); break;
+          case 5: ritualScript.praiseTheSun(); break;
           default: break;
           }
        }
