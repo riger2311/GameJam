@@ -658,7 +658,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 649304338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8ba0af80a3454ce89bde033b1fa0e2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 88f6c31f2e30a4383873566c000c8cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   action_bar: []
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 649304338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bdf50846e6e140e9b7541decec3b9ab, type: 3}
+  m_Script: {fileID: 11500000, guid: f29ad2950370a4b439dae1bed145b184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   actions: []
@@ -987,12 +987,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1381165185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05bdfe00a463a4940bedbb4b805218fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c34659d0effc4fbfb20546950df3310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   npcPrefab: {fileID: 180466, guid: b4e0e9ca721f4406c8850bc7d3757f54, type: 2}
   bars: {fileID: 191876622}
-  maxRounds: 5
+  maxRounds: 0
   gui: {fileID: 649304340}
   playerIndicator: {fileID: 1890527709}
   roundIndicator: {fileID: 588469514}
