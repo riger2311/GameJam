@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class RitualScript : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class RitualScript : MonoBehaviour {
 	public WorshipIndicators bars;
 	public int maxRounds;
 	public ActionBar gui;
+	public GameObject playerIndicator;
 
 	private float affiliationPlayer1;
 	private float affiliationPlayer2;
@@ -51,6 +53,9 @@ public class RitualScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		updateStatusBars();
+
+		string playerText = playerModifier < 0 ? "Player 2" : "Player 1";
+		playerIndicator.GetComponent<Text> ().text = playerText;
 
 		if(roundsPlayed == (maxRounds * 2)) {
 			string winText;
