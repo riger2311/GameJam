@@ -54,7 +54,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -88,18 +88,17 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 71, y: -12}
+      - - {x: 80, y: -18}
+        - {x: 69, y: -12}
         - {x: 55, y: -12}
-        - {x: 52, y: -14}
-        - {x: 47, y: -44}
-        - {x: 34, y: -99}
-        - {x: 34, y: -110}
-        - {x: 41, y: -125}
-        - {x: 51, y: -127}
-        - {x: 72, y: -127}
-        - {x: 92, y: -116}
-        - {x: 92, y: -98}
-        - {x: 91, y: -58}
+        - {x: 43, y: -34}
+        - {x: 34, y: -79}
+        - {x: 34, y: -126}
+        - {x: 42, y: -127}
+        - {x: 74, y: -127}
+        - {x: 92, y: -117}
+        - {x: 92, y: -94}
+        - {x: 88, y: -60}
     - name: SpriteAnimation_1
       rect:
         serializedVersion: 2
@@ -111,15 +110,14 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 57, y: -14}
-        - {x: 47, y: -20}
-        - {x: 35, y: -93}
-        - {x: 35, y: -124}
-        - {x: 47, y: -127}
-        - {x: 80, y: -127}
-        - {x: 92, y: -122}
-        - {x: 92, y: -67}
-        - {x: 78, y: -14}
+      - - {x: 80, y: -13}
+        - {x: 56, y: -13}
+        - {x: 35, y: -35}
+        - {x: 35, y: -127}
+        - {x: 84, y: -127}
+        - {x: 93, y: -122}
+        - {x: 93, y: -82}
+        - {x: 84, y: -17}
     - name: SpriteAnimation_2
       rect:
         serializedVersion: 2
@@ -131,16 +129,16 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 30, y: -100}
-        - {x: 30, y: -119}
-        - {x: 43, y: -127}
-        - {x: 69, y: -127}
-        - {x: 88, y: -118}
-        - {x: 88, y: -70}
-        - {x: 81, y: -30}
-        - {x: 73, y: -15}
-        - {x: 59, y: -15}
-        - {x: 52, y: -18}
+      - - {x: 30, y: -83}
+        - {x: 30, y: -126}
+        - {x: 32, y: -127}
+        - {x: 70, y: -127}
+        - {x: 88, y: -119}
+        - {x: 88, y: -42}
+        - {x: 84, y: -17}
+        - {x: 79, y: -15}
+        - {x: 57, y: -15}
+        - {x: 37, y: -40}
     - name: SpriteAnimation_3
       rect:
         serializedVersion: 2
@@ -152,16 +150,12 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 74, y: -15}
-        - {x: 63, y: -15}
-        - {x: 52, y: -21}
-        - {x: 35, y: -94}
-        - {x: 35, y: -123}
-        - {x: 49, y: -128}
-        - {x: 80, y: -128}
-        - {x: 93, y: -119}
-        - {x: 93, y: -86}
-        - {x: 79, y: -24}
+      - - {x: 80, y: -128}
+        - {x: 93, y: -121}
+        - {x: 93, y: -64}
+        - {x: 79, y: -15}
+        - {x: 35, y: -15}
+        - {x: 35, y: -128}
     - name: SpriteAnimation_4
       rect:
         serializedVersion: 2
@@ -173,15 +167,15 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36, y: -121}
-        - {x: 44, y: -127}
-        - {x: 79, y: -127}
-        - {x: 93, y: -119}
-        - {x: 93, y: -82}
-        - {x: 80, y: -15}
-        - {x: 76, y: -12}
+      - - {x: 73, y: -12}
         - {x: 51, y: -12}
-        - {x: 36, y: -56}
+        - {x: 35, y: -97}
+        - {x: 35, y: -123}
+        - {x: 50, y: -127}
+        - {x: 81, y: -127}
+        - {x: 94, y: -119}
+        - {x: 94, y: -90}
+        - {x: 78, y: -15}
     - name: SpriteAnimation_5
       rect:
         serializedVersion: 2
@@ -193,16 +187,14 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 66, y: -84}
-        - {x: 61, y: -84}
-        - {x: 55, y: -91}
-        - {x: 55, y: -98}
-        - {x: 56, y: -108}
-        - {x: 60, y: -111}
-        - {x: 68, y: -111}
-        - {x: 72, y: -104}
-        - {x: 72, y: -91}
-        - {x: 71, y: -87}
+      - - {x: 63, y: -84}
+        - {x: 55, y: -86}
+        - {x: 55, y: -105}
+        - {x: 57, y: -111}
+        - {x: 71, y: -111}
+        - {x: 72, y: -107}
+        - {x: 72, y: -85}
+        - {x: 71, y: -84}
     - name: SpriteAnimation_6
       rect:
         serializedVersion: 2
@@ -230,13 +222,15 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 37, y: -15}
-        - {x: 35, y: -39}
-        - {x: 35, y: -128}
-        - {x: 80, y: -128}
-        - {x: 93, y: -124}
-        - {x: 93, y: -83}
-        - {x: 77, y: -15}
+      - - {x: 35, y: -72}
+        - {x: 35, y: -123}
+        - {x: 41, y: -128}
+        - {x: 90, y: -128}
+        - {x: 93, y: -127}
+        - {x: 93, y: -75}
+        - {x: 84, y: -15}
+        - {x: 54, y: -15}
+        - {x: 42, y: -36}
     - name: SpriteAnimation_8
       rect:
         serializedVersion: 2
@@ -248,15 +242,14 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 74, y: -15}
-        - {x: 45, y: -15}
-        - {x: 35, y: -40}
-        - {x: 35, y: -127}
-        - {x: 37, y: -128}
-        - {x: 91, y: -128}
-        - {x: 93, y: -126}
-        - {x: 93, y: -88}
-        - {x: 81, y: -20}
+      - - {x: 55, y: -15}
+        - {x: 43, y: -35}
+        - {x: 35, y: -89}
+        - {x: 35, y: -128}
+        - {x: 83, y: -128}
+        - {x: 93, y: -116}
+        - {x: 93, y: -41}
+        - {x: 76, y: -15}
     - name: SpriteAnimation_9
       rect:
         serializedVersion: 2
@@ -268,18 +261,16 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 74, y: -16}
-        - {x: 66, y: -15}
-        - {x: 59, y: -15}
-        - {x: 54, y: -18}
-        - {x: 48, y: -47}
-        - {x: 35, y: -101}
-        - {x: 35, y: -116}
-        - {x: 39, y: -128}
-        - {x: 83, y: -128}
-        - {x: 93, y: -121}
-        - {x: 93, y: -91}
-        - {x: 86, y: -54}
+      - - {x: 88, y: -15}
+        - {x: 56, y: -15}
+        - {x: 50, y: -17}
+        - {x: 35, y: -79}
+        - {x: 35, y: -121}
+        - {x: 45, y: -128}
+        - {x: 78, y: -128}
+        - {x: 92, y: -118}
+        - {x: 93, y: -115}
+        - {x: 93, y: -87}
     - name: SpriteAnimation_10
       rect:
         serializedVersion: 2
@@ -291,13 +282,14 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 35, y: -15}
-        - {x: 35, y: -124}
-        - {x: 39, y: -128}
-        - {x: 76, y: -128}
-        - {x: 93, y: -119}
-        - {x: 93, y: -46}
-        - {x: 74, y: -15}
+      - - {x: 55, y: -15}
+        - {x: 43, y: -35}
+        - {x: 35, y: -89}
+        - {x: 35, y: -128}
+        - {x: 83, y: -128}
+        - {x: 93, y: -116}
+        - {x: 93, y: -41}
+        - {x: 76, y: -15}
     - name: SpriteAnimation_11
       rect:
         serializedVersion: 2
@@ -309,12 +301,17 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 35, y: -128}
-        - {x: 93, y: -128}
-        - {x: 93, y: -62}
-        - {x: 82, y: -15}
-        - {x: 47, y: -15}
-        - {x: 35, y: -57}
+      - - {x: 75, y: -15}
+        - {x: 56, y: -15}
+        - {x: 44, y: -35}
+        - {x: 35, y: -99}
+        - {x: 35, y: -118}
+        - {x: 36, y: -122}
+        - {x: 49, y: -128}
+        - {x: 83, y: -128}
+        - {x: 93, y: -116}
+        - {x: 93, y: -88}
+        - {x: 87, y: -63}
     - name: SpriteAnimation_12
       rect:
         serializedVersion: 2
@@ -326,16 +323,18 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 74, y: -11}
-        - {x: 47, y: -11}
-        - {x: 36, y: -47}
-        - {x: 36, y: -118}
-        - {x: 49, y: -125}
-        - {x: 78, y: -125}
-        - {x: 85, y: -123}
-        - {x: 93, y: -112}
-        - {x: 93, y: -92}
-        - {x: 76, y: -14}
+      - - {x: 72, y: -11}
+        - {x: 62, y: -11}
+        - {x: 51, y: -19}
+        - {x: 47, y: -51}
+        - {x: 36, y: -84}
+        - {x: 36, y: -119}
+        - {x: 52, y: -126}
+        - {x: 80, y: -126}
+        - {x: 86, y: -124}
+        - {x: 93, y: -111}
+        - {x: 93, y: -84}
+        - {x: 82, y: -31}
     - name: SpriteAnimation_13
       rect:
         serializedVersion: 2
@@ -347,14 +346,19 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 75, y: -10}
-        - {x: 44, y: -10}
-        - {x: 35, y: -39}
-        - {x: 35, y: -126}
-        - {x: 85, y: -126}
-        - {x: 93, y: -118}
-        - {x: 93, y: -60}
-        - {x: 82, y: -17}
+      - - {x: 66, y: -10}
+        - {x: 57, y: -10}
+        - {x: 50, y: -18}
+        - {x: 51, y: -29}
+        - {x: 48, y: -52}
+        - {x: 35, y: -89}
+        - {x: 35, y: -113}
+        - {x: 45, y: -126}
+        - {x: 67, y: -126}
+        - {x: 84, y: -124}
+        - {x: 93, y: -116}
+        - {x: 93, y: -88}
+        - {x: 75, y: -13}
     - name: SpriteAnimation_14
       rect:
         serializedVersion: 2
@@ -366,14 +370,14 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 44, y: -12}
-        - {x: 35, y: -22}
-        - {x: 35, y: -125}
-        - {x: 88, y: -125}
-        - {x: 93, y: -115}
-        - {x: 93, y: -82}
-        - {x: 84, y: -42}
-        - {x: 66, y: -12}
+      - - {x: 40, y: -12}
+        - {x: 35, y: -34}
+        - {x: 35, y: -119}
+        - {x: 43, y: -125}
+        - {x: 85, y: -125}
+        - {x: 93, y: -118}
+        - {x: 93, y: -64}
+        - {x: 73, y: -12}
     - name: SpriteAnimation_15
       rect:
         serializedVersion: 2
@@ -385,14 +389,19 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 75, y: -10}
-        - {x: 44, y: -10}
-        - {x: 35, y: -39}
-        - {x: 35, y: -126}
-        - {x: 85, y: -126}
-        - {x: 93, y: -118}
-        - {x: 93, y: -60}
-        - {x: 82, y: -17}
+      - - {x: 66, y: -10}
+        - {x: 57, y: -10}
+        - {x: 50, y: -18}
+        - {x: 51, y: -29}
+        - {x: 48, y: -52}
+        - {x: 35, y: -89}
+        - {x: 35, y: -113}
+        - {x: 45, y: -126}
+        - {x: 67, y: -126}
+        - {x: 84, y: -124}
+        - {x: 93, y: -116}
+        - {x: 93, y: -88}
+        - {x: 75, y: -13}
     - name: SpriteAnimation_16
       rect:
         serializedVersion: 2
@@ -404,16 +413,15 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 70, y: -11}
-        - {x: 57, y: -11}
-        - {x: 45, y: -25}
-        - {x: 36, y: -74}
-        - {x: 36, y: -119}
-        - {x: 46, y: -125}
-        - {x: 86, y: -125}
-        - {x: 93, y: -112}
-        - {x: 93, y: -94}
-        - {x: 79, y: -19}
+      - - {x: 47, y: -11}
+        - {x: 35, y: -85}
+        - {x: 35, y: -111}
+        - {x: 48, y: -126}
+        - {x: 85, y: -126}
+        - {x: 93, y: -120}
+        - {x: 93, y: -59}
+        - {x: 90, y: -50}
+        - {x: 76, y: -11}
     - name: SpriteAnimation_17
       rect:
         serializedVersion: 2
@@ -425,12 +433,15 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 30, y: -16}
-        - {x: 30, y: -128}
-        - {x: 83, y: -128}
-        - {x: 87, y: -125}
-        - {x: 87, y: -37}
-        - {x: 76, y: -16}
+      - - {x: 68, y: -16}
+        - {x: 36, y: -16}
+        - {x: 30, y: -49}
+        - {x: 30, y: -126}
+        - {x: 36, y: -128}
+        - {x: 80, y: -128}
+        - {x: 87, y: -115}
+        - {x: 87, y: -82}
+        - {x: 82, y: -49}
     - name: SpriteAnimation_18
       rect:
         serializedVersion: 2
@@ -442,12 +453,15 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 30, y: -16}
-        - {x: 30, y: -128}
-        - {x: 83, y: -128}
-        - {x: 87, y: -125}
-        - {x: 87, y: -41}
-        - {x: 75, y: -16}
+      - - {x: 66, y: -16}
+        - {x: 37, y: -16}
+        - {x: 30, y: -53}
+        - {x: 30, y: -126}
+        - {x: 35, y: -128}
+        - {x: 80, y: -128}
+        - {x: 87, y: -115}
+        - {x: 87, y: -90}
+        - {x: 76, y: -36}
     - name: SpriteAnimation_19
       rect:
         serializedVersion: 2
@@ -459,13 +473,15 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 41, y: -16}
-        - {x: 30, y: -66}
-        - {x: 30, y: -128}
-        - {x: 87, y: -128}
-        - {x: 87, y: -96}
-        - {x: 70, y: -24}
-        - {x: 64, y: -16}
+      - - {x: 68, y: -16}
+        - {x: 36, y: -16}
+        - {x: 30, y: -44}
+        - {x: 30, y: -123}
+        - {x: 37, y: -128}
+        - {x: 79, y: -128}
+        - {x: 87, y: -117}
+        - {x: 87, y: -93}
+        - {x: 80, y: -49}
     - name: SpriteAnimation_20
       rect:
         serializedVersion: 2
@@ -477,12 +493,15 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 35, y: -16}
-        - {x: 30, y: -46}
-        - {x: 30, y: -126}
-        - {x: 36, y: -128}
-        - {x: 87, y: -128}
-        - {x: 87, y: -16}
+      - - {x: 43, y: -16}
+        - {x: 40, y: -17}
+        - {x: 30, y: -80}
+        - {x: 30, y: -121}
+        - {x: 41, y: -128}
+        - {x: 80, y: -128}
+        - {x: 87, y: -119}
+        - {x: 87, y: -71}
+        - {x: 71, y: -16}
     - name: SpriteAnimation_21
       rect:
         serializedVersion: 2
@@ -494,15 +513,14 @@ TextureImporter:
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 71, y: -17}
-        - {x: 69, y: -16}
-        - {x: 42, y: -16}
-        - {x: 30, y: -32}
-        - {x: 30, y: -128}
-        - {x: 82, y: -128}
-        - {x: 87, y: -117}
-        - {x: 87, y: -89}
-        - {x: 76, y: -36}
+      - - {x: 34, y: -16}
+        - {x: 30, y: -42}
+        - {x: 30, y: -125}
+        - {x: 36, y: -128}
+        - {x: 80, y: -128}
+        - {x: 87, y: -119}
+        - {x: 87, y: -66}
+        - {x: 73, y: -16}
     - name: SpriteAnimation_22
       rect:
         serializedVersion: 2
