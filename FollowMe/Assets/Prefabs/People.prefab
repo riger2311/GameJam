@@ -55,13 +55,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 180466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02ee9569dd1d14887bd3aa7b8a486945, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ddce23e977c1420ba04c77bd4ef2a2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   funAttribute: 0
   fearAttribute: 0
   noMeatAttribute: 0
-  affiliationThreshold: 0.5
+  affiliationThreshold: 0
+  affiliaton: 0
 --- !u!212 &21245982
 SpriteRenderer:
   m_ObjectHideFlags: 1

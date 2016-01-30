@@ -35,14 +35,28 @@ public class RitualScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		npcs = new List<GameObject>();
+		int people = 50;
+		int rows = 3;
+		float x = -7.0f;
+		float y = -1.5f;
+		float offset = -0.2f;
 
-		for(int i = 0; i < 100; i++) {
-			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(0,0,0), Quaternion.identity));
+		for(int i = 0; i < people; i++) {
+			//lower x= -7.0
+			//upper x= 4.0
+ 
+			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(x, y,0.0f), Quaternion.identity));
+			x +=  (11.0f * ((float) rows) / ((float) people));
+			if(x > 4.0f) {
+				x = -7.0f + offset;
+				y -= 0.3f * ((float) rows);
+				offset += 0.4f;
+			}
 		}
 
 //		affiliationPlayer1 = 0.0f;
 //		affiliationPlayer2 = 0.0f;
-		playerModifier = 1.0f; //MUST be 1 or -1
+		playerModifier = -1.0f; //MUST be 1 or -1
 
 		repeatModifier1 = 1.0f;
 		repeatModifier2 = 1.0f;
