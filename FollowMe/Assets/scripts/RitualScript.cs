@@ -11,6 +11,7 @@ public class RitualScript : MonoBehaviour {
 	public int maxRounds;
 	public ActionBar gui;
 	public GameObject playerIndicator;
+	public GameObject roundIndicator;
 
 	private float affiliationPlayer1;
 	private float affiliationPlayer2;
@@ -68,12 +69,9 @@ public class RitualScript : MonoBehaviour {
 	void Update () {
 		updateStatusBars();
 
-		string playerText = playerModifier < 0 ? "Player 2" : "Player 1";
-		playerIndicator.GetComponent<Text> ().text = playerText;
-
-		if(roundsPlayed == (maxRounds * 2)) {
+		if (roundsPlayed == (maxRounds * 2)) {
 			string winText;
-			if(affiliationPlayer1 > affiliationPlayer2) {
+			if (affiliationPlayer1 > affiliationPlayer2) {
 				winText = "Player 1 wins!";				
 			} else if (affiliationPlayer1 < affiliationPlayer2) {
 				winText = "Player 2 wins!";
@@ -81,8 +79,17 @@ public class RitualScript : MonoBehaviour {
 				winText = "Draw!";
 			}
 
-			gui.showWinText(winText);
+			gui.showWinText (winText);
 
+			playerIndicator.GetComponent<Text> ().text = "";
+			roundIndicator.GetComponent<Text> ().text = "";
+
+		} else {
+			string playerText = playerModifier < 0 ? "Player 2" : "Player 1";
+			playerIndicator.GetComponent<Text> ().text = playerText;
+
+			string roundText = "Round " + (roundsPlayed / 2 + 1);
+			roundIndicator.GetComponent<Text> ().text = roundText;
 		}
 	
 	}
@@ -106,8 +113,8 @@ public class RitualScript : MonoBehaviour {
 		bars.givePointsToA(affiliationPlayer1);
 		bars.givePointsToB(affiliationPlayer2);
 
-		Debug.Log("percentage for player1: " + affiliationPlayer1);
-		Debug.Log("percentage for player2: " + affiliationPlayer2);
+//		Debug.Log("percentage for player1: " + affiliationPlayer1);
+//		Debug.Log("percentage for player2: " + affiliationPlayer2);
 	}
 
 	void repeatedRitual(ref float repeatModifier) {

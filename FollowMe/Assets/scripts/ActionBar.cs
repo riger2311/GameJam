@@ -11,23 +11,23 @@ public class ActionBar : MonoBehaviour {
 
     private bool showActionBar;
     private string winText;
+	private bool gameFinished = false;
 
     
 
 	// Use this for initialization
 	void Start ()
 	{
+	gameFinished = false;
 	showActionBar = true;
 	database = GetComponent<ActionDatabase>();
 	
-    for(int counter = 0; counter < database.actions.Count; counter++)
-    {
-    	action_bar.Add(database.actions[counter]);
-    }
-
-
+	    for(int counter = 0; counter < database.actions.Count; counter++)
+	    {
+	    	action_bar.Add(database.actions[counter]);
+	    }
 	}
-	
+		
 	void OnGUI ()
 	{
       //set GUI skin and Background of inventory
@@ -37,6 +37,9 @@ public class ActionBar : MonoBehaviour {
    }
    else {
     showWinningPlayer();
+	if (Input.GetMouseButtonDown (0) && gameFinished) {
+		Application.LoadLevel ("Intro");
+	}
    } 
 	}
 
@@ -117,6 +120,7 @@ public class ActionBar : MonoBehaviour {
   public void showWinText(string wintext) {
     winText = wintext;
     showActionBar = false;
+	gameFinished = true;
   }
 
 }

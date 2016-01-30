@@ -9,6 +9,8 @@ FollowMe/Library/assetsDatabase*
 FollowMe/Library/metadata/*
 FollowMe/ProjectSettings/ProjectSettings.asset
 
+FollowMeBuild/
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
