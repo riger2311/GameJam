@@ -89,7 +89,7 @@ public class ActionBar : MonoBehaviour {
             }
             GUI.skin.label.alignment = TextAnchor.UpperLeft;
             Rect text_rect = new Rect(tooltip_rect.x+tile_offset_height, tooltip_rect.y+tile_offset_height,tooltip_rect.width,tooltip_rect.height);
-			GUI.Box(tooltip_rect,"",skin.GetStyle("TooltipBack"));
+			GUI.Box(tooltip_rect,"",skin.GetStyle("ActionBack"));
             GUI.Label(text_rect,tooltip);
 
         //check if action is clicked on
@@ -117,7 +117,7 @@ public class ActionBar : MonoBehaviour {
             int height = startY;
 
             GUI.Box(new Rect(startX, startY, width, height),"",skin.GetStyle("ActionBack"));
-            GUI.Label(new Rect(startX, startY, width, height), "<b><size=70>" + winText + "</size></b>");
+            GUI.Label(new Rect(startX, startY, width, height), "<size=40>" + winText + "</size>");
             retryButton.gameObject.SetActive(true);
             exitButton.gameObject.SetActive(true);
 
