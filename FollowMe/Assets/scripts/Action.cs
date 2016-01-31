@@ -33,7 +33,7 @@ public class Action{
 		} else if (funStat < 0) {
 			return "-";
 		} else {
-			return "₀";
+			return "";
 		}
 	}
 	public string fearText(){
@@ -42,7 +42,7 @@ public class Action{
 		} else if (fearStat < 0) {
 			return "-";
 		} else {
-			return "₀";
+			return "";
 		}
 	}
 	public string noMeatText(){
@@ -51,7 +51,7 @@ public class Action{
 		} else if (noMeatStat < 0) {
 			return "-";
 		} else {
-			return "₀";
+			return "";
 		}
 	}
 
