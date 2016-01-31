@@ -52,8 +52,8 @@ public class RitualScript : MonoBehaviour {
 			//lower x= -7.0
 			//upper x= 4.0
  
-			float tmpx = x + Random.Range(-2f, 2f);
-			float tmpy = y + Random.Range(-0.5f, 0.1f);
+			float tmpx = x + Random.Range(-3f, 3f);
+			float tmpy = y + Random.Range(-0.7f, 0.7f);
 			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(tmpx, tmpy,-1f), Quaternion.identity));
 //			x +=  (11.0f * ((float) rows) / ((float) people));
 //			if(x > 4.0f) {

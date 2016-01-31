@@ -16,6 +16,8 @@ public class NPCAttributes : MonoBehaviour {
 	private float funValue;
 	private float fearValue;
 	private float noMeatValue;
+	private float tmpy;
+
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +28,7 @@ public class NPCAttributes : MonoBehaviour {
 		funAttribute = Random.Range(0.0f, 1.0f);
 		fearAttribute = Random.Range(0.0f, 1.0f);
 		noMeatAttribute = Random.Range(0.0f, 1.0f);
+		tmpy = this.transform.position.y;
 	}
 	
 	// Update is called once per frame
@@ -43,10 +46,10 @@ public class NPCAttributes : MonoBehaviour {
 				affiliaton = 4f;
 			}
 			//this.transform.position = v;
-
+			tmpy = Random.Range(-0.7f, 0.7f);
 		} 
 		float tmpAff = RitualScript.ConvertRange (-4f, 4f, -5.4f, 5.4f, affiliaton);
-		Vector3 v = new Vector3(tmpAff, this.transform.position.y, this.transform.position.z);
+		Vector3 v = new Vector3(tmpAff, tmpy, this.transform.position.z);
 		float step = speed * Time.deltaTime;
 		transform.position = Vector3.MoveTowards(transform.position, v, step);
 	
