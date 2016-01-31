@@ -6,7 +6,7 @@ public class NPCAttributes : MonoBehaviour {
 	public float funAttribute;
 	public float fearAttribute;
 	public float noMeatAttribute;
-
+	public float speed = 2.0f;
 	public float affiliationThreshold;
 
 	//should be between -1.0 and 1.0
@@ -42,11 +42,13 @@ public class NPCAttributes : MonoBehaviour {
 			} else if (affiliaton > 4f) {
 				affiliaton = 4f;
 			}
-			float tmpAff = RitualScript.ConvertRange (-4f, 4f, -6.5f, 5.4f, affiliaton);
-			Vector3 v = new Vector3(tmpAff, this.transform.position.y, this.transform.position.z);
-			this.transform.position = v;
+			//this.transform.position = v;
 
 		} 
+		float tmpAff = RitualScript.ConvertRange (-4f, 4f, -5.4f, 5.4f, affiliaton);
+		Vector3 v = new Vector3(tmpAff, this.transform.position.y, this.transform.position.z);
+		float step = speed * Time.deltaTime;
+		transform.position = Vector3.MoveTowards(transform.position, v, step);
 	
 	}
 
