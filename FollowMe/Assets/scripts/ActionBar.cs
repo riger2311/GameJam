@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 public class ActionBar : MonoBehaviour {
 
     public List<Action> action_bar = new List<Action>();
     public GUISkin skin;
     public RitualScript ritualScript;
+    public Button retryButton;
+    public Button exitButton;
     private ActionDatabase database;
     private string tooltip;
 
@@ -26,6 +29,9 @@ public class ActionBar : MonoBehaviour {
 	    {
 	    	action_bar.Add(database.actions[counter]);
 	    }
+
+  retryButton.gameObject.SetActive(false);
+  exitButton.gameObject.SetActive(false);
 	}
 		
 	void OnGUI ()
@@ -37,9 +43,6 @@ public class ActionBar : MonoBehaviour {
    }
    else {
     showWinningPlayer();
-	if (Input.GetMouseButtonDown (0) && gameFinished) {
-		Application.LoadLevel ("Intro");
-	}
    } 
 	}
 
@@ -115,12 +118,15 @@ public class ActionBar : MonoBehaviour {
 
             GUI.Box(new Rect(startX, startY, width, height),"",skin.GetStyle("ActionBack"));
             GUI.Label(new Rect(startX, startY, width, height), "<b><size=70>" + winText + "</size></b>");
-  }
+            retryButton.gameObject.SetActive(true);
+            exitButton.gameObject.SetActive(true);
+
+            }
 
   public void showWinText(string wintext) {
     winText = wintext;
     showActionBar = false;
-	gameFinished = true;
+	 gameFinished = true;
   }
 
 }

@@ -7,4 +7,8 @@ public class LevelManager : MonoBehaviour {
 	public void loadLevel(string levelToLoad){
 		Application.LoadLevel (levelToLoad);
 	}
+
+	public void exitGame() {
+		Application.Quit();
+	}
 }
