@@ -196,9 +196,9 @@ public class RitualScript : MonoBehaviour {
 	public void letBeerRain() {
 		//fun++
 		//fear--
-		float funValue = playerModifier * repeatModifier1 * 1.8f; // between -2,-1 and 1,2
-		float fearValue = playerModifier * repeatModifier1 * -1.2f; // between -2,-1 and 1,2
-		float noMeatValue = playerModifier * 0f;
+		float funValue = playerModifier * repeatModifier1 * gui.database.actions[0].funStat; // between -2,-1 and 1,2
+		float fearValue = playerModifier * repeatModifier1 * gui.database.actions[0].fearStat; // between -2,-1 and 1,2
+		float noMeatValue = playerModifier * gui.database.actions[0].noMeatStat;
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
@@ -215,9 +215,9 @@ public class RitualScript : MonoBehaviour {
 	public void slaughterLamb() {
 		//noMeat--
 		//fear++
-		float funValue = playerModifier * 0f;
-		float fearValue = playerModifier * repeatModifier2 * 1.2f; // between -2,-1 and 1,2
-		float noMeatValue = playerModifier * repeatModifier2 * -1.8f; // between -2,-1 and 1,2
+		float funValue = playerModifier * gui.database.actions[4].funStat;
+		float fearValue = playerModifier * repeatModifier2 * gui.database.actions[4].fearStat; // between -2,-1 and 1,2
+		float noMeatValue = playerModifier * repeatModifier2 * gui.database.actions[4].noMeatStat; // between -2,-1 and 1,2
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
@@ -235,9 +235,9 @@ public class RitualScript : MonoBehaviour {
 	public void drought() {
 		//fear++
 		//noMeat-
-		float funValue = playerModifier * 0f;
-		float fearValue = playerModifier * repeatModifier3 *1.6f; // between -2,-1 and 1,2
-		float noMeatValue = playerModifier * repeatModifier3 * -1.1f; // between -2,-1 and 1,2
+		float funValue = playerModifier * gui.database.actions[2].funStat;
+		float fearValue = playerModifier * repeatModifier3 * gui.database.actions[2].fearStat; // between -2,-1 and 1,2
+		float noMeatValue = playerModifier * repeatModifier3 * gui.database.actions[2].noMeatStat; // between -2,-1 and 1,2
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
@@ -255,9 +255,9 @@ public class RitualScript : MonoBehaviour {
 	public void sacrificePeople() {
 		//fear++
 		//fun-
-		float funValue = playerModifier * repeatModifier4 * -1.2f; // between -2,-1 and 1,2
-		float fearValue = playerModifier * repeatModifier4 * 1.5f; // between -2,-1 and 1,2
-		float noMeatValue = playerModifier * 0f;
+		float funValue = playerModifier * repeatModifier4 * gui.database.actions[1].funStat; // between -2,-1 and 1,2
+		float fearValue = playerModifier * repeatModifier4 * gui.database.actions[1].fearStat; // between -2,-1 and 1,2
+		float noMeatValue = playerModifier * gui.database.actions[1].noMeatStat;
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
@@ -274,9 +274,9 @@ public class RitualScript : MonoBehaviour {
 	public void praiseTheSun() {
 		//fun++
 		//fear-
-		float funValue = playerModifier * repeatModifier5 * 1.9f; // between -2,-1 and 1,2
-		float fearValue = playerModifier * repeatModifier5 * -1.2f; // between -2,-1 and 1,2
-		float noMeatValue = playerModifier * 0f;
+		float funValue = playerModifier * repeatModifier5 * gui.database.actions[5].funStat; // between -2,-1 and 1,2
+		float fearValue = playerModifier * repeatModifier5 * gui.database.actions[5].fearStat; // between -2,-1 and 1,2
+		float noMeatValue = playerModifier * gui.database.actions[5].noMeatStat;
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
@@ -294,9 +294,9 @@ public class RitualScript : MonoBehaviour {
 	public void richHarvest() {
 		//noMeat++
 		//fear-
-		float funValue = playerModifier * 0f;
-		float fearValue = playerModifier * repeatModifier6 * -1.3f; // between -2,-1 and 1,2
-		float noMeatValue = playerModifier * repeatModifier6 * 1.8f; // between -2,-1 and 1,2
+		float funValue = playerModifier * gui.database.actions[3].funStat;
+		float fearValue = playerModifier * repeatModifier6 * gui.database.actions[3].fearStat; // between -2,-1 and 1,2
+		float noMeatValue = playerModifier * repeatModifier6 * gui.database.actions[3].noMeatStat; // between -2,-1 and 1,2
 		foreach (GameObject npc in npcs) 
 		{		
 			npc.GetComponent<NPCAttributes>().triggerAction(funValue, fearValue, noMeatValue);
