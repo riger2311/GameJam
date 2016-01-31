@@ -28,6 +28,11 @@ public class NPCAttributes : MonoBehaviour {
 		funAttribute = Random.Range(0.0f, 1.0f);
 		fearAttribute = Random.Range(0.0f, 1.0f);
 		noMeatAttribute = Random.Range(0.0f, 1.0f);
+		Renderer rend = GetComponent<Renderer> ();
+		float funColor = funAttribute < 0.6f ? 0.6f : funAttribute;
+		float fearColor = fearAttribute < 0.6f ? 0.6f : fearAttribute;
+		float noMeatColor = noMeatAttribute < 0.6f ? 0.6f : noMeatAttribute;
+		rend.material.color = new Color (funColor, fearColor, noMeatColor, 1f);
 		tmpy = this.transform.position.y;
 	}
 	
