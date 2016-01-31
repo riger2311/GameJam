@@ -37,7 +37,7 @@ public class RitualScript : MonoBehaviour {
 	void Start () {
 		npcs = new List<GameObject>();
 		int people = 50;
-		float x = -2.5f;
+		float x = -0f;
 		float y = 0.0f;
 
 		for(int i = 0; i < people; i++) {
@@ -46,7 +46,7 @@ public class RitualScript : MonoBehaviour {
  
 			float tmpx = x + Random.Range(-2f, 2f);
 			float tmpy = y + Random.Range(-0.5f, 0.1f);
-			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(tmpx, tmpy,0.0f), Quaternion.identity));
+			npcs.Add((GameObject) Instantiate(npcPrefab, new Vector3(tmpx, tmpy,-1f), Quaternion.identity));
 //			x +=  (11.0f * ((float) rows) / ((float) people));
 //			if(x > 4.0f) {
 //				//
