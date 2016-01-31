@@ -9,7 +9,7 @@ public class ActionBar : MonoBehaviour {
     public RitualScript ritualScript;
     public Button retryButton;
     public Button exitButton;
-    private ActionDatabase database;
+    public ActionDatabase database;
     private string tooltip;
 
     private bool showActionBar;
@@ -91,6 +91,24 @@ public class ActionBar : MonoBehaviour {
             Rect text_rect = new Rect(tooltip_rect.x+tile_offset_height, tooltip_rect.y+tile_offset_height,tooltip_rect.width,tooltip_rect.height);
 			GUI.Box(tooltip_rect,"",skin.GetStyle("ActionBack"));
             GUI.Label(text_rect,tooltip);
+
+				Rect fun_rect = new Rect(begin+tooltip_rect.width-30,(offset_height+height+tile_offset_height+10),10,10);
+				GUI.Box(fun_rect,"",skin.GetStyle("FunColor"));
+				string funtext = ""+action_bar[counter].funText();
+				Rect funtext_rect = new Rect(begin+tooltip_rect.width-20, (offset_height+height+tile_offset_height+2),25,20);
+				GUI.Label(funtext_rect,funtext);
+
+				Rect fear_rect = new Rect(begin+tooltip_rect.width-50,(offset_height+height+tile_offset_height+10),10,10);
+				GUI.Box(fear_rect,"",skin.GetStyle("FearColor"));
+				string feartext = ""+action_bar[counter].fearText();
+				Rect feartext_rect = new Rect(begin+tooltip_rect.width-40, (offset_height+height+tile_offset_height+2),25,20);
+				GUI.Label(feartext_rect,feartext);
+
+				Rect meat_rect = new Rect(begin+tooltip_rect.width-70,(offset_height+height+tile_offset_height+10),10,10);
+				GUI.Box(meat_rect,"",skin.GetStyle("MeatColor"));
+				string meattext = ""+action_bar[counter].noMeatText();
+				Rect meattext_rect = new Rect(begin+tooltip_rect.width-60, (offset_height+height+tile_offset_height+2),25,30);
+				GUI.Label(meattext_rect,meattext);
 
         //check if action is clicked on
         if(Event.current.isMouse && Event.current.type == EventType.mouseDown && Event.current.button == 0)

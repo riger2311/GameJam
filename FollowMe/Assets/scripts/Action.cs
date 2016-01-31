@@ -27,4 +27,32 @@ public class Action{
 
 	}
 
+	public string funText(){
+		if (funStat > 0) {
+			return "+";
+		} else if (funStat < 0) {
+			return "-";
+		} else {
+			return "";
+		}
+	}
+	public string fearText(){
+		if (fearStat > 0) {
+			return "+";
+		} else if (fearStat < 0) {
+			return "-";
+		} else {
+			return "";
+		}
+	}
+	public string noMeatText(){
+		if (noMeatStat > 0) {
+			return "+";
+		} else if (noMeatStat < 0) {
+			return "-";
+		} else {
+			return "";
+		}
+	}
+
 }
