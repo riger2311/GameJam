@@ -314,6 +314,108 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressA: {fileID: 1558204537}
   progressB: {fileID: 1178671793}
+--- !u!1 &486959543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486959545}
+  - 82: {fileID: 486959544}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &486959544
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486959543}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &486959545
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486959543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.22709101, y: 0.020495677, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &588469514
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +960,13 @@ MonoBehaviour:
   playerB: {fileID: 911240911}
   playerAAnimator: {fileID: 0}
   playerBAnimator: {fileID: 0}
+  audioSource: {fileID: 486959544}
+  beer: {fileID: 8300000, guid: 46236ea2b0bda420a907ff39a4d5de3d, type: 3}
+  fire: {fileID: 8300000, guid: 8615441899215454f928d905d14dab74, type: 3}
+  dust: {fileID: 8300000, guid: 82e9f76b601ba47ac8b61e52b63b8e60, type: 3}
+  harvest: {fileID: 8300000, guid: 1b7ae0d0ac5834652a917b64de524fc6, type: 3}
+  slaughter: {fileID: 8300000, guid: 3fd9bb09596f74610bde550281ed907f, type: 3}
+  sun: {fileID: 8300000, guid: 1dbf9f809c9ef4cb6bca5da5bad33044, type: 3}
   avgAffiliaton: 0
   minAffiliaton: 0
   maxAffiliaton: 0

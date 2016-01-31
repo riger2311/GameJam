@@ -16,6 +16,14 @@ public class RitualScript : MonoBehaviour {
 	public GameObject playerB;
 	public Animator playerAAnimator;
 	public Animator playerBAnimator;
+	public AudioSource audioSource;
+	public AudioClip beer;
+	public AudioClip fire;
+	public AudioClip dust;
+	public AudioClip harvest;
+	public AudioClip slaughter;
+	public AudioClip sun;
+
 
 	public float avgAffiliaton;
 	public float minAffiliaton;
@@ -200,6 +208,8 @@ public class RitualScript : MonoBehaviour {
 		roundsPlayed++;
 		playAnimation ();
 		playerModifier *= -1.0f;
+		audioSource.clip = beer;
+		audioSource.Play ();
 	}
 		
 	public void slaughterLamb() {
@@ -217,6 +227,9 @@ public class RitualScript : MonoBehaviour {
 		roundsPlayed++;
 		playAnimation ();
 		playerModifier *= -1.0f;
+		audioSource.clip = slaughter;
+		audioSource.Play ();
+
 	}
 
 	public void drought() {
@@ -234,6 +247,9 @@ public class RitualScript : MonoBehaviour {
 		roundsPlayed++;
 		playAnimation ();
 		playerModifier *= -1.0f;
+		audioSource.clip = dust;
+		audioSource.Play ();
+
 	}
 
 	public void sacrificePeople() {
@@ -251,6 +267,8 @@ public class RitualScript : MonoBehaviour {
 		roundsPlayed++;
 		playAnimation ();
 		playerModifier *= -1.0f;
+		audioSource.clip = fire;
+		audioSource.Play ();
 	}
 
 	public void praiseTheSun() {
@@ -268,6 +286,9 @@ public class RitualScript : MonoBehaviour {
 		roundsPlayed++;
 		playAnimation ();
 		playerModifier *= -1.0f;
+		audioSource.clip = sun;
+		audioSource.Play ();
+
 	}
 
 	public void richHarvest() {
@@ -285,5 +306,8 @@ public class RitualScript : MonoBehaviour {
 		roundsPlayed++;
 		playAnimation ();
 		playerModifier *= -1.0f;
+		audioSource.clip = harvest;
+		audioSource.Play ();
+
 	}
 }
